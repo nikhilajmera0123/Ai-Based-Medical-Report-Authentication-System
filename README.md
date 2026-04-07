@@ -5,7 +5,7 @@
 ---
 
 ## 🔗 Live Demo
-🚧 Coming Soon (Deploy on Render/AWS)
+https://ai-based-medical-report-authentication-rx06.onrender.com
 
 ---
 

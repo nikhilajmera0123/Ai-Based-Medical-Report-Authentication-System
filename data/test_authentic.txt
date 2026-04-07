@@ -1,0 +1,9 @@
+Doctor Name: Dr. Kavita Iyer
+Qualification: MBBS, MD
+Hospital Name: Arogya Clinic
+Patient Age: 35
+Diagnosis: Gastroenteritis
+Medicine 1: Norflox TZ
+Dose 1: 1-0-1
+Medicine 2: Pan-40
+Dose 2: 1-0-1

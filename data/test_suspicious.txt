@@ -1,0 +1,9 @@
+Doctor Name: Dr. Gaurav
+Qualification: MBBS,MD
+Hospital Name: SMS Clinic
+Patient Age: 22
+Diagnosis: Gastroenteritis
+Medicine 1: PAN-40
+Dose 1: 1-0-1
+Medicine 2: CYRA-D
+Dose 2: 1-0-1

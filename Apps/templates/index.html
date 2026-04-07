@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Report Authentication</title>
+    <!-- Modern Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="background-mesh"></div>
+    
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fa-solid fa-notes-medical"></i>
+            </div>
+            <h1>MedAuth AI</h1>
+            <p>Advanced Medical Report Authentication System</p>
+        </header>
+
+        <main>
+            <!-- Upload Section -->
+            <div class="upload-card">
+                <div class="feature-strip">
+                    <span><i class="fa-solid fa-shield-heart"></i> AI + Rules</span>
+                    <span><i class="fa-solid fa-file-waveform"></i> PDF/TXT/Image</span>
+                    <span><i class="fa-solid fa-clock-rotate-left"></i> Instant Result</span>
+                </div>
+                <div id="drop-area" class="drop-area">
+                    <input type="file" id="fileElem" accept="application/pdf, text/plain, image/png, image/jpeg" hidden>
+                    <label class="upload-label" for="fileElem">
+                        <i class="fa-solid fa-cloud-arrow-up upload-icon"></i>
+                        <span class="upload-text">Drag & Drop your report</span>
+                        <span class="upload-subtext">Supports .PDF, .TXT, .PNG, and .JPG files</span>
+                        <button class="browse-btn">Browse Files</button>
+                    </label>
+                </div>
+                <!-- Loading State -->
+                <div id="loading" class="loading hidden">
+                    <div class="loader-orb">
+                        <div class="spinner"></div>
+                    </div>
+                    <h3 id="loading-title">Analyzing report...</h3>
+                    <p id="loading-subtitle">Extracting text and validating medical structure</p>
+                    <div class="progress-wrap">
+                        <div id="loading-progress" class="progress-bar"></div>
+                    </div>
+                    <div class="loading-steps">
+                        <span class="step-item"><i class="fa-solid fa-file-lines"></i> OCR</span>
+                        <span class="step-item"><i class="fa-solid fa-sliders"></i> Features</span>
+                        <span class="step-item"><i class="fa-solid fa-shield"></i> AI + Rules</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Result Section -->
+            <div id="result-card" class="result-card hidden">
+                <div class="result-header">
+                    <h2 id="auth-status-title">Authentication Status</h2>
+                    <div id="auth-badge" class="badge"></div>
+                </div>
+                
+                <div class="extracted-data">
+                    <h3>Extracted Entities</h3>
+                    <div class="grid" id="data-grid">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+
+                <div class="extracted-data">
+                    <h3>Decision Reasons</h3>
+                    <div class="grid" id="reason-grid">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+                
+                <button id="reset-btn" class="reset-btn"><i class="fa-solid fa-rotate-left"></i> Analyze Another Report</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

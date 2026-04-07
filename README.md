@@ -9,13 +9,13 @@ https://ai-based-medical-report-authentication-rx06.onrender.com
 
 ---
 
-## 📸 Project Preview
+## 📸 Project Demo
 
 ### 🧾 Upload Medical Report
-![Upload UI](assets/upload.png)
+![Upload Screen](assets/upload.png)
 
 ### 📊 Prediction Output
-![Output](assets/output.png)
+![Output Screen](assets/output.png)
 
 ---
 

@@ -18,7 +18,7 @@ app = Flask(__name__)
 CORS(app)  # This allows Lovable or any external React app to talk to this API
 
 current_dir = os.path.dirname(__file__)
-model_path = os.path.join(current_dir, "..", "model", "hybrid_model.pkl")
+model_path = os.path.join(current_dir, "..", "model", "best_model.pkl")
 metadata_path = os.path.join(current_dir, "..", "model", "model_metadata.pkl")
 
 # Load globally

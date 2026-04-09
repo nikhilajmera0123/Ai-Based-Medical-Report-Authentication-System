@@ -7,4 +7,6 @@ flask-cors
 PyPDF2
 pytesseract
 Pillow
+matplotlib
+seaborn
 gunicorn
